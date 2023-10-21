@@ -1,0 +1,267 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style: none;
+}
+li:hover a {
+    background:#484872;
+    border-radius: 5px;
+    
+    }
+    
+.active{
+    color:#fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body,html{
+    overflow-x: hidden;
+}
+ .navbar{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(103, 19, 19);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+
+}
+
+ header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/young-woman-walking-wooden-path-with-green-rice-field-vang-vieng-laos.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.header-content{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width:150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin:10px auto;
+    border-radius: 5px;
+
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+.section{
+    
+    width: 80px;
+    margin:80px auto;
+}
+.tittle{
+    text-align: center;
+    font-size:4vmin;
+    color:darkblue;
+}
+
+.row{
+    display: flex;
+    align-items:flex-start;
+    
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.rows{
+    display: flex;
+    align-items:flex-start;
+    
+    width: 100%;
+    margin: 80px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.rows .cols{
+    margin: 25px;
+    padding: 15px;
+    display: row;
+    flex-direction:column;
+    align-items: flex-start;
+    box-sizing: center;  
+}
+
+
+.row .col{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-sizing: center;
+    
+}
+
+.gallery:hover {
+    transform: scale(1.3);
+    z-index: 2;
+
+  }
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#fc036b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.events .row{
+    
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    
+    margin: 20px auto;
+}
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.footer{
+    padding-top: 50px;
+    background-color:#484872;
+    color: whitesmoke;
+    
+}
+.container{
+
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    background-color:whitesmoke;
+}
+
+    
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    
+}
+.footer{
+    width: 33.3%;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width: 150px;
+    margin: auto;
+    padding: 7px;
+}    
+.footer-content ul{
+    text-align: center;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #fc036b;
+    transition-duration: .5%;
+}
+.list li:hover::before{
+    width:70px;
+}
+
+.bottom-bar{
+    background: #484872;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 60px;
+}
+.bottom-bar p{
+    color:rgb(183, 50, 50);
+    margin: 0;
+    font-size: 20px;
+    padding: 7px; ;
+
+}
+.ctn{
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 20px 100px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #484872;
+    color:white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color:#484872;}
+  
